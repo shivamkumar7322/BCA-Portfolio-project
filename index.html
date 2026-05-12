@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakshmi Narayan College | BCA Programme</title>
+    <!-- Font Awesome 6 (free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts: Poppins + Orbitron for accents -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Orbitron:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="top-bar">
+            <div class="container header-flex">
+                <div class="logo-area">
+                    <!-- logo.png from user -->
+                    <img src="image/logo.png" alt="Lakshmi Narayan College Logo" onerror="this.onerror=null; ">
+                </div>
+                <div class="top-right">
+                    <a href="mailto:info@lncollege.ac.in" class="email-link">
+                        <i class="fa-regular fa-envelope"></i> info@lncollege.ac.in
+                    </a>
+                    <a href="#" class="login-btn"><i class="fa-solid fa-user"></i> Login</a>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="main-navbar">
+            <div class="container">
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fa fa-bars"></i> Menu
+                </div>
+                <ul class="nav-links" id="nav-list">
+                    <li><a href="#"><i class="fa fa-home"></i> <b>HOME</b></a></li>
+
+                    <!-- ABOUT dropdown -->
+                    <li class="has-dropdown">
+                        <a href="#"><b>ABOUT</b></a>
+                        <ul class="dropdown">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Vision</a></li>
+                            <li><a href="#">Mission</a></li>
+                            <li><a href="#">Goal & Objective</a></li>
+                            <li><a href="#">History</a></li>
+                            <li class="has-submenu">
+                                <a href="#">Principal »</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Principal's Desk</a></li>
+                                    <li><a href="#">List of Principals</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Administrative</a></li>
+                            <li><a href="#">IQAC</a></li>
+                            <li><a href="#">Committees</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- ADMISSION dropdown with nested structures -->
+                    <li class="has-dropdown">
+                        <a href="#"><b>ADMISSION</b></a>
+                        <ul class="dropdown">
+                            <li class="has-submenu">
+                                <a href="#">Programs »</a>
+                                <ul class="submenu">
+                                    <li class="has-submenu">
+                                        <a href="#">Structure »</a>
+                                        <ul class="submenu-right">
+                                            <li><a href="#">BCA</a></li>
+                                            <li><a href="#">B.A</a></li>
+                                            <li><a href="#">B.SC</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-submenu">
+                                        <a href="#">Intermediate »</a>
+                                        <ul class="submenu-right">
+                                            <li><a href="#">I.Sc</a></li>
+                                            <li><a href="#">I.A</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Scholarship</a></li>
+                            <li><a href="#">Fee Structure</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- CAMPUS LIFE -->
+                    <li class="has-dropdown">
+                        <a href="#"><b>CAMPUS-LIFE</b></a>
+                        <ul class="dropdown">
+                            <li><a href="#">Facilities</a></li>
+                            <li><a href="#">Student Zone</a></li>
+                            <li><a href="#">Clubs</a></li>
+                        </ul>
+                    </li>
+                    <!-- PLACEMENT -->
+                    <li class="has-dropdown">
+                        <a href="#"><b>PLACEMENT</b></a>
+                        <ul class="dropdown">
+                            <li><a href="#">Notices</a></li>
+                            <li><a href="#">Campus News</a></li>
+                            <li><a href="#">Recruiters</a></li>
+                        </ul>
+                    </li>
+                    <!-- GALLERY -->
+                    <li class="has-dropdown">
+                        <a href="#"><b>GALLERY</b></a>
+                        <ul class="dropdown">
+                            <li><a href="#">Picture Gallery</a></li>
+                            <li><a href="#">Event Gallery</a></li>
+                            <li><a href="#">Media Gallery</a></li>
+                        </ul>
+                    </li>
+                    <!-- CONTACT US -->
+                    <li class="has-dropdown">
+                        <a href="#"><b>CONTACT US</b></a>
+                        <ul class="dropdown">
+                            <li><a href="#">Contact Info</a></li>
+                            <li><a href="#">College Location</a></li>
+                            <li><a href="#">Feedback</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><b>NAAC</b></a></li>
+                    <!-- MORE... big dropdown -->
+                    <li class="has-dropdown">
+                        <a href="#"><b>MORE...</b></a>
+                        <ul class="dropdown last-dropdown">
+                            <li><a href="#">Alumni @ LN College</a></li>
+                            <li><a href="#">Find Roll number</a></li>
+                            <li><a href="#">Tenders</a></li>
+                            <li><a href="#">Publications</a></li>
+                            <li><a href="#">List Of Holidays</a></li>
+                            <li><a href="#">Mandatory Discloses</a></li>
+                            <li><a href="#">Rules & Regulations</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">RTI</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </li>
+                    <li class="online"><a href="https://lncollege.ac.in/cms/" rel="noopener"><b>ONLINE APPLY</b></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>BACHELOR OF COMPUTER <span>APPLICATION</span> (BCA)</h1>
+                <a href="https://lncollege.ac.in/cms/" class="apply-now-btn">APPLY NOW</a>
+                <div class="footer-pills">
+                    <div class="pill">
+                        &gt; A Constituent Unit of B.R.A. Bihar University, Muzaffarpur, Bihar
+                    </div>
+                    <div class="pill">
+                        &gt; NAAC Grade 'B'
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- program-overview -->
+
+    <section class="program-overview">
+        <div class="container overview-flex">
+
+            <!-- Left Content -->
+            <div class="overview-left">
+                <h2 class="section-title">PROGRAM OVERVIEW</h2>
+                <p class="overview-text">
+                    BCA Programme is a UGC approved 3 years full time Graduate degree programme of 120 credits divided in 6 semesters (20 credits in each semester). The B.C.A program at Dr. C. V. Raman University aims to prepare students for choosing various verticals of
+                    the information technology field. It provides various platforms in the field of software industries, web industries and also in the academic areas.
+                </p>
+
+                <div class="hod-section">
+                    <div class="hod-badge">
+                        HOD (BCA)
+                    </div>
+                    <div class="hod-card">
+                        <div class="hod-img-container">
+                            <!-- Aapki provide ki gayi HOD image -->
+                            <img src="image/aarti_maam.png" alt="HOD BCA">
+                        </div>
+
+                        <div class="hod-info-wrapper">
+                            <!-- Experience & Teacher Details -->
+                            <div class="hod-details">
+                                <p>Experience: 15+ <em>years of teaching experience</em></p>
+                                <p>Teacher: Computer Science</p>
+                            </div>
+
+                            <!-- Name Box -->
+                            <div class="hod-name-box">
+                                <span>AARTI SINGH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Content (Images & Info Box) -->
+            <div class="overview-right">
+                <div class="image-wrapper">
+                    <!-- Aapki provide ki gayi Programming image -->
+                    <img src="image/programming-image.jpg" alt="Programming" class="main-prog-img">
+
+                    <!-- Blue Info Box -->
+                    <div class="info-box-blue">
+                        <div class="info-item">
+                            <h3>3 YEARS</h3>
+                            <p>Duration of Program</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>UG</h3>
+                            <p>Level of Study</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Teacher with Students Section -->
+    <section class="teacher-student-section">
+        <div class="container main-flex-wrapper">
+
+            <!-- Left Side: Group Photo & Text -->
+            <div class="left-content">
+                <div class="section-badge">
+                    TEACHER'S WITH STUDENT'S
+                </div>
+
+                <div class="group-photo-container">
+                    <img src="image/stu-tre.jpg" alt="Teachers with Students">
+                </div>
+
+                <div class="description-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ad, optio similique consequatur magni delectus. dolores, quibusdam mollitia, id doloribus error necessitatibus vel eaque facere voluptate reprehenderit accusamus Lorembr. ipsum dolor sit
+                        amet consectetur adipisicing elit. Deleniti ad, optio similique consequatur magni delectus. dolores, quibusdam mollitia, id doloribus error necessitatibus vel eaque facere voluptate reprehenderit accusamus. dolores, quibusdam mollitia,
+                        id doloribus error necessitatibus vel eaque facere voluptate reprehenderit accusamus.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ad, optio similique consequatur magni delectus. cumque reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ad, optio similique consequatur magni delectus. dolores,
+                        quibusdam mollitia, id doloribus error necessitatibus vel eaque facere voluptate reprehenderit accusamus?
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Side: Principal Profile -->
+            <div class="right-sidebar">
+                <div class="principal-header">
+                    PRINCIPAL
+                </div>
+                <div class="principal-card">
+                    <div class="principal-img-box">
+                        <img src="image/NEW PRINCIPAL.png" alt="Principal">
+                    </div>
+                    <div class="principal-meta">
+                        <h4>Prof. Dr. Sunita Kumari <br> Sharma</h4>
+                        <p>Principal</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="highlights-section">
+        <div class="container">
+            <h2 class="highlights-title">KEY HIGHLIGHTS</h2>
+
+            <div class="highlights-grid">
+                <div class="highlight-item">
+                    <div class="circle-container">
+                        <img src="image/circle-01.jpg" alt="Highlight 1">
+                        <div class="circle-text">Industry-focused education using ICT tools</div>
+                    </div>
+                </div>
+
+                <div class="highlight-item">
+                    <div class="circle-container">
+                        <img src="image/circle-02.jpg" alt="Highlight 2">
+                        <div class="circle-text">Excellent facilities for infrastructure and computing</div>
+                    </div>
+                </div>
+
+                <div class="highlight-item">
+                    <div class="circle-container">
+                        <img src="image/circle-03.jpg" alt="Highlight 3">
+                        <div class="circle-text">Process of well-defined student mentorship</div>
+                    </div>
+                </div>
+
+                <div class="highlight-item">
+                    <div class="circle-container">
+                        <img src="image/circle-04.jpg" alt="Highlight 4">
+                        <div class="circle-text">Outstanding academic performance</div>
+                    </div>
+                </div>
+
+                <div class="highlight-item">
+                    <div class="circle-container">
+                        <img src="image/circle-05.jpg" alt="Highlight 5">
+                        <div class="circle-text">Outstanding placement records</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+
+    <section class="benefit-section">
+        <div class="container">
+            <h2 class="section-title">HOW WILL YOU BENEFIT</h2>
+
+            <div class="benefit-grid">
+                <div class="benefit-column">
+                    <div class="benefit-item">
+                        <img src="image/scholorships-icon.png" alt="icon" class="benefit-icon">
+                        <p>Enhances your technical skills while augmenting these with management skills.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <img src="image/scholorships-icon.png" alt="icon" class="benefit-icon">
+                        <p>Good for your career development and could even help you land a promotion or pay rise</p>
+                    </div>
+                </div>
+
+                <div class="benefit-column">
+                    <div class="benefit-item">
+                        <img src="image/scholorships-icon.png" alt="icon" class="benefit-icon">
+                        <p>Popular roles for MSc IT students include Software Developer, Senior Software Engineer, Technical Consultant, and Quality Assurance Engineer</p>
+                    </div>
+                    <div class="benefit-item">
+                        <img src="image/scholorships-icon.png" alt="icon" class="benefit-icon">
+                        <p>Judgment and decision-making skills wherein considering the related costs/benefits of potential actions and selecting the right one</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-wrapper">
+                <a href="https://lncollege.ac.in/cms/" target="_blank" rel="noopener" class="apply-btn-how">APPLY NOW</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="study-section">
+        <div class="container">
+            <div class="title-wrapper">
+                <h2 class="study-title">WHAT WILL YOU STUDY</h2>
+            </div>
+
+            <div class="study-list">
+                <div class="study-item">
+                    <img src="image/chk-icon.jpg" alt="check" class="check-icon">
+                    <p class="highlight-text">Students will develop more advanced computer skills through participation in this programme.</p>
+                </div>
+
+                <div class="study-item">
+                    <img src="image/chk-icon.jpg" alt="check" class="check-icon">
+                    <p>This program provides the chance to gain overall knowledge of computer which includes both software and hardware.</p>
+                </div>
+
+                <div class="study-item">
+                    <img src="image/chk-icon.jpg" alt="check" class="check-icon">
+                    <p>This program also develops the knowledge of programming, networking, data mining and soft computing to the learners.</p>
+                </div>
+
+                <div class="study-item">
+                    <img src="image/chk-icon.jpg" alt="check" class="check-icon">
+                    <p>The learners also have the knowledge of both theoretical and practical aspect of computer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="outcome-section">
+        <div class="container">
+            <div class="outcome-list">
+
+                <div class="outcome-box">
+                    <p>programer outcome</p>
+                </div>
+
+                <div class="outcome-box">
+                    <p>programer Education outcome</p>
+                </div>
+
+                <div class="outcome-box">
+                    <p>programer Specific outcome</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="curriculum-section">
+        <div class="container">
+            <h2 class="main-title">CURRICULUM</h2>
+
+            <div class="tabs-container">
+                <button class="tab-link active" onclick="openSemester(event, 'sem1')">Semester-1</button>
+                <button class="tab-link" onclick="openSemester(event, 'sem2')">Semester-2</button>
+                <button class="tab-link" onclick="openSemester(event, 'sem3')">Semester-3</button>
+                <button class="tab-link" onclick="openSemester(event, 'sem4')">Semester-4</button>
+                <button class="tab-link" onclick="openSemester(event, 'sem5')">Semester-5</button>
+                <button class="tab-link" onclick="openSemester(event, 'sem6')">Semester-6</button>
+            </div>
+
+            <div id="sem1" class="tab-content show">
+                <h3 class="courses-title">CURRICULUM COURSES</h3>
+                <div class="courses-grid">
+                    <div class="course-item">1.) FUNDAMENTALS OF ENTREPRENEURSHIP</div>
+                    <div class="course-item">2.) FUNDAMENTALS OF COMPUTERS & INFORMATION TECHNOLOGY</div>
+                    <div class="course-item">3.) WINDOWS & MS OFFICE (WORD | POWER POINT | EXCEL | OUTLOOK EXPRESS)</div>
+                    <div class="course-item">4.) PROGRAMMING IN C</div>
+                    <div class="course-item">5.) DISCRETE MATHEMATICS</div>
+                </div>
+            </div>
+
+            <div id="sem2" class="tab-content">
+                <h3 class="courses-title">CURRICULUM COURSES (SEM 2)</h3>
+                <p>Semester 2 content goes here...</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="careers-section">
+        <h2 class="section-title">CAREERS AND EMPLOYBILITY</h2>
+
+        <div class="blue-bg-wrapper">
+            <div class="container">
+                <div class="careers-grid">
+                    <div class="career-item">
+                        <div class="circle-box it-analyst">
+                            <p>IT Analyst</p>
+                        </div>
+                    </div>
+                    <div class="career-item">
+                        <div class="circle-box web-designer">
+                            <p>Web Designer</p>
+                        </div>
+                    </div>
+                    <div class="career-item">
+                        <div class="circle-box admin">
+                            <p>Administrator</p>
+                        </div>
+                    </div>
+                    <div class="career-item">
+                        <div class="circle-box dev">
+                            <p>Software Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="eligibility-section">
+        <div class="container">
+            <h2 class="main-title">ELIGIBILITY CRITERIA</h2>
+
+            <div class="criteria-grid">
+                <div class="criteria-box">
+                    <p>ELIGIBILITY - 10+2</p>
+                </div>
+
+                <div class="criteria-box">
+                    <p>GEN.-45% ST,SC,OBC-40%</p>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <a href="https://lncollege.ac.in/cms/" rel="noopener" class="btn-orange">APPLY NOW</a>
+                <a href="https://lncollege.ac.in/cms/" rel="noopener" class="btn-orange">ENQUIRE NOW</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Admission</a></li>
+                        <li><a href="#">Placement</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Happenings</a></li>
+                        <li><a href="#">Download Forms</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Other Links</h3>
+                    <ul>
+                        <li><a href="#">IQAC</a></li>
+                        <li><a href="#">NIRF</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Mandatory Disclosure</a></li>
+                        <li><a href="#">How To Reach</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Programmes</h3>
+                    <ul>
+                        <li><a href="#">Engineering & Technology</a></li>
+                        <li><a href="#">Physical Education</a></li>
+                        <li><a href="#">Information & Technology</a></li>
+                        <li><a href="#">Commerce & Management</a></li>
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">Arts</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-col contact-info">
+                    <h3>University Campus</h3>
+                    <p>BR. BRABU University, Muzaffarpur (Bihar)</p>
+                    <p>Happenings</p>
+                    <p>Download Forms</p>
+                    <p class="phone-num">7322846171</p>
+                    <p class="phone-num">8544159062</p>
+                    <p>✉ info@lncollege.ac.in</p>
+                </div>
+
+                <div class="animated-footer-box">
+                    <div class="glow-layer"></div>
+                    <img src="image/shivam.png" alt="Profile" class="profile-pic">
+                </div>
+            </div>
+
+            <div class="footer-action-bar">
+                <a href="https://lncollege.ac.in/cms/" target="_blank" rel="noopener" class="btn-footer-apply">APPLY NOW</a>
+                <div class="social-icons-row">
+                    <a href="https://www.facebook.com/profile.php?id=100089650286734&mibextid=JRoKGi" class="social-box fb" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/sanjeev_sauvik?igsh=MXZtMXBudnN4eDE0Zg==" class="social-box ig" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/+917322846171" class="social-box wa" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="http://www.youtube.com/@republicbihar2498" class="social-box yt" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/shivam-kumar-571289309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " class="social-box in" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <p>&copy; Copyright 2026. All Rights Reserved. Rony_singh801</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
