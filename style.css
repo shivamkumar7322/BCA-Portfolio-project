@@ -273,11 +273,40 @@ body {
 /* ========== HERO SECTION ========== */
 
 .hero-section {
-    background: url('image/CONTAINER1.jpg');
     background-size: cover;
     background-position: center 30%;
+    position: relative;
     padding: 110px 0 100px;
+    z-index: 1;
+    color: var(--text-color);
+    transition: 0.3s;
+    animation: heroImageSlideshow 1.5s ease-in-out infinite;
     text-align: center;
+}
+
+body.dark-mode .hero-section {
+    color: #ffffff;
+}
+
+@keyframes heroImageSlideshow {
+    0% {
+        background-image: url('image/IITMP_Banner.jpg');
+    }
+    33.33% {
+        background-image: url('image/IITMP_Banner.jpg');
+    }
+    33.34% {
+        background-image: url('image/CONTAINER1.jpg');
+    }
+    66.66% {
+        background-image: url('image/CONTAINER1.jpg');
+    }
+    66.67% {
+        background-image: url('image/GettyImages.jpg');
+    }
+    100% {
+        background-image: url('image/GettyImages.jpg');
+    }
 }
 
 .hero-content h1 {
