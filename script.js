@@ -174,13 +174,7 @@
       }
 
       // login demo
-      const loginBtn = document.querySelector('.login-btn');
-      if (loginBtn) {
-          loginBtn.addEventListener('click', (e) => {
-              e.preventDefault();
-              alert("Student/Admin login portal will be launched shortly.");
-          });
-      }
+    
 
       // for desktop user, ensure if window resizes from mobile to desktop -> remove all inline display from dropdowns
       window.addEventListener('resize', function() {
